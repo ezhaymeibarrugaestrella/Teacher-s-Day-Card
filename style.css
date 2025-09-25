@@ -1,0 +1,148 @@
+/* General styles */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #0f0f0f);
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Card container */
+.card-container {
+  perspective: 1200px;
+}
+
+.card {
+  width: 360px;
+  height: 560px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.9s cubic-bezier(0.4, 0.2, 0.2, 1);
+  cursor: pointer;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Card faces */
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 40px rgba(0, 255, 200, 0.2);
+  padding: 30px 20px;
+  text-align: center;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* Photo frame */
+.photo-frame {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00ffc3, #00bfff);
+  padding: 3px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
+  cursor: pointer;
+}
+
+.photo-placeholder, 
+#uploadedPhoto {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.1);
+  font-size: 40px;
+}
+
+#uploadedPhoto {
+  display: none;
+  object-fit: cover;
+}
+
+.upload-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.photo-frame:hover .upload-overlay {
+  opacity: 1;
+}
+
+.upload-text {
+  font-size: 12px;
+  color: #fff;
+}
+
+/* Text */
+.teacher-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0 5px;
+  color: #00ffc3;
+  text-shadow: 0 0 10px rgba(0,255,200,0.7);
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.greeting {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 15px 0;
+  text-shadow: 0 0 15px rgba(0, 200, 255, 0.7);
+}
+
+.message {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #eee;
+}
+
+.signature {
+  margin-top: 20px;
+  font-size: 13px;
+  font-style: italic;
+  color: #00ffc3;
+}
+
+.flip-note {
+  margin-top: auto;
+  font-size: 12px;
+  color: #aaa;
+  opacity: 0.7;
+}

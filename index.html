@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher's Day Card - Ma'am Daisy Jean Castillo</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card-container">
+    <div class="card" id="teacherCard">
+      
+      <!-- Front -->
+      <div class="card-face card-front">
+        <div class="photo-frame" id="photoFrame">
+          <div class="photo-placeholder" id="photoPlaceholder">👩‍🏫</div>
+          <img id="uploadedPhoto" alt="Instructor Photo">
+          <div class="upload-overlay" id="uploadOverlay">
+            <div class="upload-text">📷 Upload Photo</div>
+          </div>
+        </div>
+
+        <input type="file" id="photoInput" accept="image/*" hidden>
+
+        <h1 class="teacher-name">Ma'am Daisy Jean Castillo</h1>
+        <p class="subtitle">Our Inspiring Instructor</p>
+        <p class="greeting">Happy Teacher’s Day 🌟</p>
+
+        <div class="flip-note">Click to read message →</div>
+      </div>
+
+      <!-- Back -->
+      <div class="card-face card-back">
+        <p class="message">
+          Dear Ma'am Daisy Jean,<br><br>
+          Thank you Ma'am for all the efforts para sa pag teach sa amon Ma'am from 1st yr kami till now. 
+          Thank you for inspiring not only our minds, but also our hearts.<br><br>
+          Nawa'y continue po to inspire others Ma'am, hoping na hindi ka po magbago.<br><br>
+          Wishing you a Happy Teacher’s Day filled with joy, respect, and love. We love you Ma'am Daisy..💖
+        </p>
+
+        <div class="signature">
+          With gratitude,<br>Your Student:<br>Ezhay Mei
+        </div>
+
+        <div class="flip-note">← Click to go back</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
