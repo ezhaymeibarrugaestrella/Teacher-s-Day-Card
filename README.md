@@ -22,7 +22,7 @@
 ~JavaScript (Vanilla JS) – interactive flip animation and upload photo function
 
 💡 How to Use:
-Visit the site👉:
+Visit the site👉: https://ezhaymeibarrugaestrella.github.io/Teacher-s-Day-Card/
 
 🖌️ Customization:
 ~Change colors in style.css for different aesthetics.
